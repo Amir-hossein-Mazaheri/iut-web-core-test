@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IUT Web Core</title>
+  </head>
+  <body class="overflow-hidden">
+    <main
+      class="w-screen h-screen overflow-auto relative bg-gradient-to-tr from-[#9c27b0] to-[#28fcf1]"
+    >
+      <div class="text-center text-white mt-8">
+        <h1 class="font-semibold text-4xl">IUT Web Core Entrance Test!</h1>
+        <h class="italic">Thank your for takin the test!</h>
+      </div>
+      <div
+        class="min-w-fit w-1/2 max-w-[30rem] px-6 py-5 mx-auto mt-10 mb-16 bg-white/20 backdrop-blur-lg shadow-md rounded-lg"
+      >
+        <form>
+          <div class="space-y-6">
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Name</label>
+              <input
+                class="outline-none border-none px-2 py-1 rounded shadow-2xl bg-white/50"
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Email</label>
+              <input
+                class="outline-none border-none px-2 py-1 shadow-2xl rounded bg-white/50"
+                type="text"
+                placeholder="Enter your Email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Age(optional)</label>
+              <input
+                class="outline-none border-none px-2 py-1 shadow-2xl rounded bg-white/50"
+                type="number"
+                placeholder="Enter your Email"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="favorite-activity"
+                >Which option best describes your current role ?</label
+              >
+              <select
+                class="outline-none border-none px-2 py-1 shadow-2xl rounded bg-white/50"
+                name="favorite-activity"
+                id="favorite-activity"
+              >
+                <option selected value="">Select current role</option>
+                <option value="front-end">Front End Developer</option>
+                <option value="back-end">Back End Developer</option>
+                <option value="full-stack">Full Stack Developer</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Would your recommend Web core to a friend?</label>
+              <div>
+                <input
+                  type="radio"
+                  name="friend-recommendation"
+                  checked
+                  id="def"
+                />
+                <label for="def">Definitely</label>
+              </div>
+              <div>
+                <input type="radio" name="friend-recommendation" id="maybe" />
+                <label for="maybe">Maybe</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="friend-recommendation"
+                  id="not-sure"
+                />
+                <label for="not-sure">Not Sure</label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="favorite-activity"
+                >What is your favorite Activity of Web Core ?</label
+              >
+              <select
+                class="outline-none border-none px-2 py-1 rounded shadow-2xl bg-white/50"
+                name="favorite-activity"
+                id="favorite-activity"
+              >
+                <option selected value="">Select an option</option>
+                <option value="sth">Something</option>
+                <option value="sth2">Something 2</option>
+                <option value="sth3">Something 3</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Would your recommend Web core to a friend?</label>
+              <div>
+                <input type="checkbox" name="front-end" id="front-end" />
+                <label for="front-end">Front End Projects</label>
+              </div>
+              <div>
+                <input type="checkbox" name="back-end" id="back-end" />
+                <label for="back-end">Back End Project</label>
+              </div>
+              <div>
+                <input type="checkbox" name="data-vis" id="data-vis" />
+                <label for="data-vis">Data Visualization</label>
+              </div>
+              <div>
+                <input type="checkbox" name="challenges" id="challenges" />
+                <label for="challenges">Challenges</label>
+              </div>
+              <div>
+                <input type="checkbox" name="open-source" id="open-source" />
+                <label for="open-source">Open Source Community</label>
+              </div>
+              <div>
+                <input type="checkbox" name="gitter-help" id="gitter-help" />
+                <label for="gitter-help">Gitter help rooms</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="videos" id="videos" />
+                <label for="videos">Videos</label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 w-full text-gray-700">
+              <label for="">Age(optional)</label>
+              <textarea
+                class="min-h-24 h-24 max-h-36 outline-none border-none px-2 py-1 shadow-2xl rounded bg-white/50"
+                type="number"
+                placeholder="Enter your Email"
+                name="email"
+                id="email"
+              ></textarea>
+            </div>
+
+            <div class="flex justify-between">
+              <button
+                class="bg-green-700 text-white py-1 px-5 rounded"
+                name="send-data"
+                id="send-data"
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                class="bg-red-700 text-white py-1 px-5 rounded"
+                name="send-data"
+                id="send-data"
+                type="reset"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
